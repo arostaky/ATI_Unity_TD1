@@ -23,14 +23,19 @@ private Vector3 mouvement = Vector3.zero;
             acceleration = 0;
         }
         if(Input.GetKey(KeyCode.UpArrow)){
-            acceleration = acceleration + (vitesseDeplacement * Time.deltaTime);
+            acceleration = acceleration + (vitesseDeplacement * Time.deltaTime * accelerationSpeed);
             Debug.Log(acceleration);
-            transform.Translate(Vector3.forward*Time.deltaTime  * acceleration);
+            mouvement = Vector3.forward;
+            //transform.Translate(Vector3.forward*Time.deltaTime  * acceleration);
+            transform.Translate(mouvement*Time.deltaTime*acceleration);
         }
         if(Input.GetKey(KeyCode.DownArrow)){
-            acceleration = acceleration + (vitesseDeplacement * Time.deltaTime);
+            acceleration = acceleration + (vitesseDeplacement * Time.deltaTime * accelerationSpeed);
             Debug.Log(acceleration);
-            transform.Translate(Vector3.back*Time.deltaTime * acceleration);
+            mouvement = -1f * Vector3.forward;
+            transform.Translate(mouvement*Time.deltaTime*acceleration);
+            //transform.Translate(Vector3.back*Time.deltaTime * acceleration);
+            // this works if you use negative numbers....
             //    if(acceleration < 0){
             //     acceleration = 0;
             // }

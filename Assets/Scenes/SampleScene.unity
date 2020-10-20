@@ -673,6 +673,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -745,6 +746,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2559edc38c0f7cc10919bd7d349f56c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joueur: {fileID: 1611326021}
+  vitesse: 5
 --- !u!1 &1196799141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1241,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1405960723}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1611326021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 47653857439b4abb4a384a8a4f14b61e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1405960723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1611326022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,8 +1259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6c4ba8d28ba5e73b3b0600e5fbd97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseDeplacement: 10
+  vitesseDeplacement: 30
   vitesseRotation: 10
+  accelerationSpeed: 0.5
 --- !u!1001 &1714183319
 PrefabInstance:
   m_ObjectHideFlags: 0
