@@ -21,6 +21,7 @@ public class Vaisseau : MonoBehaviour{
         // if we are not anywhere, we should move to a planet:
         if(surPlanete1 == false && surPlanete2 == false){
         transform.position = Vector3.MoveTowards(transform.position, planete1.position, Time.deltaTime * vitesse);
+        transform.LookAt(planete1.position);
         }
         // then check if the ship is far or closer to the planet-1
         if (distance <= distanceMin){
@@ -33,6 +34,7 @@ public class Vaisseau : MonoBehaviour{
         if (surPlanete1 ==  true){
             // we move the ship to the next planet:
             transform.position = Vector3.MoveTowards(transform.position, planete2.position, Time.deltaTime * vitesse);
+            transform.LookAt(planete2.position);
             // check distance again:
             distance = Vector3.Distance( transform.position, planete2.position);
             if(distance <= distanceMin){
@@ -44,6 +46,7 @@ public class Vaisseau : MonoBehaviour{
             // we must reset distance again and make the ship go to the first planet
             distance = Vector3.Distance( transform.position, planete1.position);
             transform.position = Vector3.MoveTowards(transform.position, planete1.position, Time.deltaTime * vitesse);
+            transform.LookAt(planete1.position);
         }
     }
 }

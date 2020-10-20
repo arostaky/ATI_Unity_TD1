@@ -1012,6 +1012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planete1: {fileID: 886620832}
+  planete2: {fileID: 1196799145}
+  distanceMin: 2
   vitesse: 12
 --- !u!1 &1373936597
 GameObject:
