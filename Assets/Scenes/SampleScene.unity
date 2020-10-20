@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 215882827}
   - component: {fileID: 215882826}
   - component: {fileID: 215882825}
+  - component: {fileID: 215882829}
   m_Layer: 0
   m_Name: PlanetB
   m_TagString: Untagged
@@ -207,14 +208,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215882824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.9497452, y: -28.238214, z: 0.2560444}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children:
   - {fileID: 730762555}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1265792584}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &215882829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215882824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328203df505f97a1c9c3f95c3def4b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesseRotation: 100
 --- !u!1 &638668650
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +334,7 @@ GameObject:
   - component: {fileID: 730762554}
   - component: {fileID: 730762553}
   - component: {fileID: 730762552}
+  - component: {fileID: 730762556}
   m_Layer: 0
   m_Name: LuneB
   m_TagString: Untagged
@@ -401,6 +416,19 @@ Transform:
   m_Father: {fileID: 215882828}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730762556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730762551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328203df505f97a1c9c3f95c3def4b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesseRotation: 0
 --- !u!1 &849983090
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +441,7 @@ GameObject:
   - component: {fileID: 849983093}
   - component: {fileID: 849983092}
   - component: {fileID: 849983091}
+  - component: {fileID: 849983095}
   m_Layer: 0
   m_Name: Soleil
   m_TagString: Untagged
@@ -492,9 +521,24 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children:
   - {fileID: 1246466004}
+  - {fileID: 1265792584}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &849983095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849983090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a97602d88bf7d7c0a1a802df5177039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesseTournerAutour: 20
+  centre: {fileID: 849983094}
 --- !u!1 &886620828
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,13 +626,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886620828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.050255, y: -28.238214, z: 0.2560444}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children:
   - {fileID: 1849660118}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1265792584}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &886620833
 MonoBehaviour:
@@ -602,7 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328203df505f97a1c9c3f95c3def4b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseRotation: 10
+  vitesseRotation: 120
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +742,7 @@ GameObject:
   - component: {fileID: 1196799144}
   - component: {fileID: 1196799143}
   - component: {fileID: 1196799142}
+  - component: {fileID: 1196799146}
   m_Layer: 0
   m_Name: PlanetC
   m_TagString: Untagged
@@ -772,14 +817,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196799141}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20.949745, y: -28.238214, z: 0.2560444}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children:
   - {fileID: 638668654}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1265792584}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1196799146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196799141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328203df505f97a1c9c3f95c3def4b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesseRotation: 150
 --- !u!1 &1246466002
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +930,39 @@ Transform:
   m_Father: {fileID: 849983094}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1265792583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1265792584}
+  m_Layer: 0
+  m_Name: Planets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1265792584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265792583}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.131282, y: 3.5297768, z: -0.03200555}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
+  m_Children:
+  - {fileID: 886620832}
+  - {fileID: 215882828}
+  - {fileID: 1196799145}
+  m_Father: {fileID: 849983094}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1405960723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -917,7 +1008,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 47653857439b4abb4a384a8a4f14b61e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47653857439b4abb4a384a8a4f14b61e,
         type: 3}
