@@ -40,12 +40,12 @@ private Vector3 mouvement = Vector3.zero;
             //     acceleration = 0;
             // }
         }
-        // with up and down doesn't work the ship moves through the Y axe (can you explain this? did i mess with the camera?):
+        //Rotation:
         if(Input.GetKey(KeyCode.RightArrow)){
-            transform.Translate(Vector3.right*Time.deltaTime * vitesseRotation);
+            transform.Rotate(Vector3.up*Time.deltaTime * vitesseRotation);
         }
         if(Input.GetKey(KeyCode.LeftArrow)){
-            transform.Translate(Vector3.left*Time.deltaTime * vitesseRotation);
+            transform.Rotate(Vector3.down*Time.deltaTime * vitesseRotation);
         }
     }
     void IncrementSpeed(float val){
