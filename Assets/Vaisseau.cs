@@ -6,7 +6,7 @@ public class Vaisseau : MonoBehaviour{
     public Transform planete1;
     public Transform planete2;
     public float distanceMin = 2f;
-    // why u want this?
+    // 
     private bool surPlanete1 = false;
     private bool surPlanete2 = false;
     //
@@ -15,7 +15,8 @@ public class Vaisseau : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        // there are many ways to do this, this is one of them and I can make it better....but let's explain everything...
+        // there are many ways to do this, this is one of them, for sure this is not the best, but it works:
+
         // 1st measure the dist betw obj and planet-1:
         distance = Vector3.Distance( transform.position, planete1.position);
         // if we are not anywhere, we should move to a planet:
