@@ -23,11 +23,12 @@ public float vitesseRotation;
 
             transform.Translate(Vector3.back*Time.deltaTime * vitesseDeplacement);
         }
+        // with up and down doesn't work:
         if(Input.GetKey(KeyCode.RightArrow)){
-            transform.Translate(Vector3.up*Time.deltaTime * vitesseRotation);
+            transform.Translate(Vector3.right*Time.deltaTime * vitesseRotation);
         }
         if(Input.GetKey(KeyCode.LeftArrow)){
-            transform.Translate(Vector3.down*Time.deltaTime * vitesseRotation);
+            transform.Translate(Vector3.left*Time.deltaTime * vitesseRotation);
         }
         
     }
