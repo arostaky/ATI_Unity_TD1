@@ -36,9 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Asteroides.cs" />
      <Compile Include="Assets\Planete.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\Solei.cs" />
+     <Compile Include="Assets\Vaisseau.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/mnt/Data/Unity3d/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
